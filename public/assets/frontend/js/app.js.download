@@ -1,0 +1,23 @@
+// fixed nav bar in jquery
+$(window).scroll(function() {
+    if($(this).scrollTop() > 75) {
+        $('.contact-nav, .navbar').addClass('active');
+    } else {
+        $('.contact-nav, .navbar').removeClass('active');
+    }
+});
+
+
+$(document).ready(function(){
+    /* navigation function */
+    $('.navbar-nav a, a.brand').on('click', function () {
+        var $el = $(this)
+            id = $el.attr('href');
+        $('html, body').animate({
+            scrollTop: $(id).offset().top - 75
+        }, 700);
+
+        $('.navbar-collapse').collapse('hide');
+        return false;
+    });
+});

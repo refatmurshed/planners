@@ -1,0 +1,140 @@
+/* responsive style start */
+@media screen and (min-width: 1330px) {
+  .container {
+    max-width: 1296px; } }
+@media screen and (min-width: 1199px) {
+  .navbar.active .navbar-collapse {
+    display: flex;
+    justify-content: flex-end; }
+  .navbar .dropdown span.nav-link:hover::after {
+    display: none; }
+  .navbar .dropdown .dropdown-menu {
+    overflow: hidden;
+    border-top: 3px solid #FB4E0A;
+    transform: scaleY(0);
+    transform-origin: 0 0 0;
+    position: absolute;
+    display: block;
+    background: #0E0F10;
+    padding: 12px 15px;
+    top: 70px;
+    left: 17px;
+    transition: all 0.3s ease-in-out; }
+    .navbar .dropdown .dropdown-menu li::before {
+      display: none; }
+    .navbar .dropdown .dropdown-menu a {
+      color: #fff;
+      white-space: nowrap; }
+      .navbar .dropdown .dropdown-menu a::after {
+        display: none; }
+  .navbar .dropdown:hover .dropdown-menu {
+    transform: scaleY(1); } }
+@media screen and (max-width: 1199px) {
+  .navbar-expand-xl > .container {
+    padding-right: 15px;
+    padding-left: 15px; }
+
+  .contact-nav {
+    display: none; }
+
+  .navbar {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    background: #fff; }
+    .navbar .navbar-toggler {
+      display: inline-block;
+      border: 1px solid red;
+      color: #000;
+      height: 75px;
+      line-height: 75px;
+      padding: 0;
+      font-weight: bold;
+      border: none;
+      outline: none;
+      font-size: 28px; }
+    .navbar .brand {
+      display: block; }
+    .navbar .navbar-nav a.nav-link,
+    .navbar .navbar-nav span.nav-link {
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      color: #000;
+      margin: 0; }
+      .navbar .navbar-nav a.nav-link.active, .navbar .navbar-nav a.nav-link:hover,
+      .navbar .navbar-nav span.nav-link.active,
+      .navbar .navbar-nav span.nav-link:hover {
+        color: #FB4E0A; }
+        .navbar .navbar-nav a.nav-link.active::after, .navbar .navbar-nav a.nav-link:hover::after,
+        .navbar .navbar-nav span.nav-link.active::after,
+        .navbar .navbar-nav span.nav-link:hover::after {
+          display: none; }
+      .navbar .navbar-nav a.nav-link.reg,
+      .navbar .navbar-nav span.nav-link.reg {
+        color: #FB4E0A; }
+    .navbar .navbar-nav li:first-child a {
+      margin-top: 12px; }
+    .navbar .navbar-nav li:last-child a {
+      margin-bottom: 12px; }
+    .navbar .enter {
+      display: none; }
+    .navbar .user {
+      position: absolute;
+      right: 15px;
+      top: 68px; }
+    .navbar .dropdown span.nav-link::before {
+      background: #000;
+      content: '';
+      display: inline-block;
+      width: 15px;
+      height: 2px;
+      position: absolute;
+      right: 0;
+      top: calc(50% - 1px); }
+    .navbar .dropdown span.nav-link.active:before, .navbar .dropdown span.nav-link:hover:before {
+      background: #FB4E0A; }
+
+  /* header style start */
+  .header-section .cover {
+    min-height: 75vh;
+    padding: 125px 0 40px; }
+
+  /* second heder style */
+  .second-header .cover {
+    min-height: 320px;
+    height: 25vh;
+    padding: 125px 0 40px; }
+
+  /* credential style start */
+  .credential-section .cover {
+      padding: 95px 0 45px;
+    min-height: 65vh; } }
+@media screen and (max-width: 991px) {
+  /* header style start */
+  .header-section .cover h1 {
+    margin-bottom: 12px;
+    font-size: 45px; }
+  .header-section .cover h4 {
+    line-height: 26px;
+    font-size: 21px; }
+
+  /* speches style start */
+  .speches-section .owl-carousel .owl-nav {
+    justify-content: flex-start; }
+  .speches-section .speches-content.separetor::after {
+    display: none; } }
+@media screen and (max-width: 576px) {
+  /* header style start */
+  .header-section .cover h1 {
+    margin-bottom: 12px;
+    font-size: 36px; }
+  .header-section .cover h4 {
+    line-height: 24px;
+    font-size: 17px; }
+  .header-section .cover .credential {
+    margin: 15px 0; }
+    .header-section .cover .credential a {
+      height: 45px;
+      line-height: 41px;
+      min-width: 165px; } }
+
+/*# sourceMappingURL=responsive.css.map */
